@@ -1,0 +1,11 @@
+**Furfural hydrogenation reaction**
+
+1. This package includes all scripts and main data for plotting major figures in the manuscript.
+
+2. In the catmap folder, input file is the input.txt for mkm and furfural_hydro.mkm is mkm.file.
+
+3. In the structure folder, you could find file.cif of calculated models applied in this work.
+
+4. In the vasp_run_example_Pt folder, you should find example files for VASP-based DFT calculations.
+
+5. Software: VASP 5.4.4, catmap 0.3.1; DFT functional: RPBE-D3
