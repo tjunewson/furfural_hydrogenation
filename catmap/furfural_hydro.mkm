@@ -16,7 +16,7 @@ prefactor_list = [1e13]*len(rxn_expressions)
 surface_names = ['Ag','Au','Cu','Ir','Ni','Pd','Pt','Rh','Ru']
 descriptor_names= ['FCHO_s','H_s']
 descriptor_ranges = [[-1.5,1],[-0.6,1]]
-resolution = [20,12]
+resolution = [20,16]
 temperature = 400
 
 species_definitions = {}
@@ -25,24 +25,6 @@ species_definitions['FCHO_g'] = {'pressure':0.1}
 species_definitions['FCH2OH_g'] = {'pressure':0.000001}
 species_definitions['CH4_g'] = {'pressure':0}
 species_definitions['H2O_g'] = {'pressure':0}
-
-####ads-ads interactions
-adsorbate_interaction_model = 'first_order'  #use "single site" interaction model
-interaction_response_function = 'smooth_piecewise_linear'
-interaction_fitting_mode = None
-cross_interaction_mode = 'geometric_mean' #use geometric mean for cross parameters
-species_definitions['s'] = {'site_names': ['111'], 'total':1}
-species_definitions['s']['interaction_response_parameters'] = {'cutoff':0.5,'smoothing':0.1}
-
-#we assume that the interaction coefficients on weak/moderate-binding and strong-binding surfaces could be approximated by the values on Cu and Pt respectively.
-#
-species_definitions['FCHO_s'] = {'self_interaction_parameter':[3.44,3.44,3.44,7.51,7.51,7.51,7.51,7.51,7.51]}
-species_definitions['H_s'] = {'self_interaction_parameter':[2.68,2.68,2.68,0.94,0.94,0.94,0.94,0.94,0.94]}
-species_definitions['H-H_s'] = {'self_interaction_parameter':[2.68,2.68,2.68,0.94,0.94,0.94,0.94,0.94,0.94]}
-
-for ads in ['FCHOH_s','FCH2O_s','FCHO-H_s','FCH2OH_s','FCH_s', 'FCH2_s', 'FCH3_s', 'FCH-HO_s', 'FCHOH-H_s', 'FCH2O-H_s','FCH-OH_s','FCH2-OH_s','FCH2-O_s','FCH-H_s','FCH2-H_s', ]:
-    species_definitions[ads] = species_definitions['FCHO_s'].copy()
-print(species_definitions)
 
 scaling_constraint_dict = {
                            'H_s':[None,1,None], 

@@ -1,0 +1,44 @@
+data_image0
+_chemical_formula_structural       Pd8O2C5H4
+_chemical_formula_sum              "Pd8 O2 C5 H4"
+_cell_length_a       2.74782
+_cell_length_b       5.49563
+_cell_length_c       26.7307
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    60
+
+_space_group_name_H-M_alt    "P 1"
+_space_group_IT_number       1
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+
+loop_
+  _atom_site_type_symbol
+  _atom_site_label
+  _atom_site_symmetry_multiplicity
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_occupancy
+  Pd  Pd1       1.0  0.50000  0.08333  0.37410  1.0000
+  Pd  Pd2       1.0  0.50000  0.58333  0.37410  1.0000
+  Pd  Pd3       1.0  0.83333  0.25000  0.45803  1.0000
+  Pd  Pd4       1.0  0.83333  0.75000  0.45803  1.0000
+  Pd  Pd5       1.0  0.16833  0.42226  0.54211  1.0000
+  Pd  Pd6       1.0  0.17221  0.91773  0.54166  1.0000
+  Pd  Pd7       1.0  0.50339  0.08950  0.62504  1.0000
+  Pd  Pd8       1.0  0.49857  0.58983  0.62830  1.0000
+  O   O1        1.0  0.36567  0.83999  0.82903  1.0000
+  O   O2        1.0  0.62088  0.54225  0.70661  1.0000
+  C   C1        1.0  0.44817  0.65438  0.79041  1.0000
+  C   C2        1.0  0.56468  0.40005  0.81069  1.0000
+  C   C3        1.0  0.54761  0.42984  0.86309  1.0000
+  C   C4        1.0  0.42547  0.69892  0.87247  1.0000
+  C   C5        1.0  0.44091  0.73361  0.73985  1.0000
+  H   H1        1.0  0.63711  0.21927  0.78917  1.0000
+  H   H2        1.0  0.61350  0.27262  0.89083  1.0000
+  H   H3        1.0  0.37136  0.81665  0.90658  1.0000
+  H   H4        1.0  0.29720  0.95477  0.72997  1.0000
