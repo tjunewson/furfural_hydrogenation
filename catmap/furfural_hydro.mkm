@@ -26,6 +26,8 @@ species_definitions['FCH2OH_g'] = {'pressure':0.000001}
 species_definitions['CH4_g'] = {'pressure':0}
 species_definitions['H2O_g'] = {'pressure':0}
 
+species_definitions['s'] = {'site_names': ['111'], 'total':1}
+
 scaling_constraint_dict = {
                            'H_s':[None,1,None], 
                            'H-H_s':'BEP',
